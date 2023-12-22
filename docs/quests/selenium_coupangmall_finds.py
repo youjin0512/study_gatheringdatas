@@ -21,7 +21,7 @@ pass
 html = browser.page_source            # browser = class, class에는 변수와 function --> page_source : function
 print(html)
 
-# - 정보 획득
+# - 정보 획득                        # 정보 획득 시 거의 고정되는 문구
 from selenium.webdriver.common.by import By
 
 ## 여러개(복수) elements 정보 가져오기  <-- 어떤 find를 했을 때 정보가 여러 개 라는 의미

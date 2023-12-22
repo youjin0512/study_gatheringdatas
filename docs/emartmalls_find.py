@@ -21,7 +21,7 @@ pass
 html = browser.page_source            # browser = class, class에는 변수와 function --> page_source : function
 print(html)
 
-# - 정보 획득
+# - 정보 획득             # 정보 획득 시 거의 고정되는 문구
 from selenium.webdriver.common.by import By
 
 # ## 하나(단수)의 element 가져오기
