@@ -1,0 +1,16 @@
+전체 : div.info
+#itembest_T > ul:nth-child(6) > li.first > div > div.info
+
+상품제목 : em
+#itembest_T > ul:nth-child(6) > li.first > div > div.info > em
+
+판매원가 : span
+#itembest_T > ul:nth-child(6) > li.first > div > div.info > ul > li.c_price > span
+
+변경가격 : span.sale
+#itembest_T > ul:nth-child(6) > li.first > div > div.info > ul > li.d_price > span.sale
+
+배송방법 : div.icons.ic_smiledelivery  (스마일배송)
+          div.icons.ic_free           (무료배송)
+#itembest_T > ul:nth-child(6) > li.first > div > div.info > div.icon > div > div.icons.ic_smiledelivery  (스마일배송)
+#itembest_T > ul:nth-child(6) > li.first > div > div.info > div.icon > div > div.icons.ic_free (무료배송)
