@@ -5,7 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 webdriver_manager_directory = ChromeDriverManager().install()
 
-browser = webdriver.Chrome(service=ChromeService(webdriver_manager_directory))
+browser = webdriver.Chrome(service=ChromeService(webdriver_manager_directory))  
 
 # ChromeDriver 실행
 

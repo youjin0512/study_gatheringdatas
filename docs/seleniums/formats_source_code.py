@@ -1,4 +1,4 @@
-# * 웹 크롤링 동작
+# * 웹 크롤링 동작      # 셀레니움에서 웹드라이버 임포트
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
@@ -23,7 +23,7 @@ print(html)
 
 # - 정보 획득
 pass
-browser.save_screenshot('./formats_source.code.png')
+browser.save_screenshot('./formats_source.code_screenshotbyrun.png')
 
 # 브라우저 종료
 browser.quit()
