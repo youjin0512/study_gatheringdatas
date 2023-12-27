@@ -111,15 +111,6 @@ for count_comments in range(len(list_count_comments)) : # comments 개수 만금
 browser.find_elements(by=By.CSS_SELECTOR, value="")
 
 
-
-# delete inserted records by _ids
-# collection.delete_many({"_id":list_inserted_ids[0]})   # 인덱스 0 삭제
-# update
-# participants.update_one({'name': name}, {'$set': {'name': name}}, upsert=True)
-# todos_list.update_many({}, {'$set': {'참여자': "", 'Todo List': "", 'Status': ""}})
-# insert
-# participants_todos.insert_one({'participant': name, 'todo': todo_item['title'], 'status': status})
-
 data = {
     'writer': '작성자',
     'rate': '평점',
