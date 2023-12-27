@@ -14,19 +14,19 @@ browser = webdriver.Chrome(service=ChromeService(webdriver_manager_directory))
 capabilities = browser.capabilities
 
 # - 주소 https://www.w3schools.com/ 입력
-browser.get("https://www.w3schools.com/")
-
-# - 가능 여부에 대한 OK 받음
-pass
-# - html 파일 받음(and 확인)
-html = browser.page_source
-print(html)
+url = "https://play.google.com/store/search?q=%ED%97%AC%EC%8A%A4%EC%BC%80%EC%96%B4%EC%95%B1&c=apps&hl=ko-KR"
+browser.get(url)
 
 # - 정보 획득
 from selenium.webdriver.common.by import By
+# 앱 제조회사 리스트 : div > a.Si6A0c.Gy4nib
+element_companies = browser.find_elements(by=By.CSS_SELECTOR, value="div > a.Si6A0c.Gy4nib")
 
-browser.save_screenshot('./formats_source.code_screenshotbyrun.png')
-pass
+for company in element_companies :
+    company.click()
+    time.sleep(1)
+    pass
+pass    
 
 # 브라우저 종료
 browser.quit()

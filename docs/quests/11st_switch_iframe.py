@@ -65,7 +65,6 @@ element_bundle = browser.find_elements(by=By.CSS_SELECTOR, value=selector_value)
 for count_comments in element_bundle : # comments 개수 만금 for문 돌리기
     try :  # writer(작성자)
         element_writer = count_comments.find_element(by=By.CSS_SELECTOR, value="dt.name")    # value : element 접근자
-#review-list-page-area > ul:nth-child(1) > li:nth-child(2) > dl > dt
         writer = element_writer.text
         pass
     except :

@@ -54,11 +54,8 @@ def connect_mongo() :
 ## 여러개(복수) elements 정보 가져오기  <-- 어떤 find를 했을 때 정보가 여러 개 라는 의미
 selector_value = "div.info"
 element_bundle = browser.find_elements(by=By.CSS_SELECTOR, value=selector_value)   # value : 전체
-
-elements_path = browser.find_elements(by=By.CSS_SELECTOR, value=selector_value)  # find_element's' 추가 / elements_path에도 's' 추가
-type(elements_path)
-
-
+# elements_path = browser.find_elements(by=By.CSS_SELECTOR, value=selector_value)  # find_element's' 추가 / elements_path에도 's' 추가
+# type(elements_path)
 
 
 previous_scrollHeight = 0
@@ -108,17 +105,9 @@ for count_comments in range(len(list_count_comments)) : # comments 개수 만금
     col_watcha.insert_one({"writer":writer, "rate":rate, "contents":contents})
     pass
 
-browser.find_elements(by=By.CSS_SELECTOR, value="")
+# browser.find_elements(by=By.CSS_SELECTOR, value="")
 
-
-data = {
-    'writer': '작성자',
-    'rate': '평점',
-    'contents': '내용'
-}
-
-
-col_watcha.insert_one(data)
+# col_watcha.insert_one(data)
 
 # 브라우저 종료
 browser.quit()
