@@ -19,13 +19,20 @@ browser.get("https://www.w3schools.com/")
 pass
 # - html 파일 받음(and 확인)
 html = browser.page_source
-print(html)
+# print(html)
 
 # - 정보 획득
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+# 한 페이지씩 이동
+element_body = browser.find_element(by=By.CSS_SELECTOR, value="body")
+element_body.send_keys(Keys.PAGE_DOWN)
+element_body.send_keys(Keys.PAGE_DOWN)
 
-browser.save_screenshot('./formats_source.code_screenshotbyrun.png')
+element_body.send_keys(Keys.PAGE_UP)
+
 pass
+# browser.save_screenshot('./formats_source.code_screenshotbyrun.png')
 
 # 브라우저 종료
-# browser.quit()
+browser.quit()
