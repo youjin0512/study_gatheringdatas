@@ -25,7 +25,7 @@ print(html)
 # - 정보 획득
 from selenium.webdriver.common.by import By
 
-browser.save_screenshot('./formats_source.code_screenshotbyrun.png')
+# browser.save_screenshot('./formats_source.code_screenshotbyrun.png')
 pass
 
 # 브라우저 종료
