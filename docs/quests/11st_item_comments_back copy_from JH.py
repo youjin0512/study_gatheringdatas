@@ -75,7 +75,7 @@ for i in range(4):
         try:                                                                                                         # 더보기 버튼 클릭 시도
             element_click = browser.find_element(by=By.CSS_SELECTOR,value = "#review-list-page-area > div > button") # 더보기 버튼 정보 추출
             element_click.click()                                                                                    # 더보기 버튼 클릭
-            current_scrollHeight = browser.execute_script("return document.body.scrollHeight")
+            current_scrollHeight = browser.execute_script("return document.body.scrollHeight")                       # 현재 웹 페이지의 전체 높이를 픽셀 단위로 반환. 예를 들어, 무한 스크롤이 있는 웹 페이지에서 모든 내용을 로드하려면 웹 페이지의 높이를 알아야함
         except:                                                                                                      # 더보기 버튼 없을 시 반복문 종료
             break
         time.sleep(3)
