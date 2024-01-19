@@ -48,5 +48,5 @@ database = mongoClient["data_go_kr"]  # data_go_kr : 정부데이터
 collection = database['PubDataOpnStdService']  # collection : 파일명 : TourStnInfoService1
 
 # insert 작업 진행
-result = collection.insert_many(contents['response']['body']['items'])
+result = collection.insert_many(contents['response']['body']['items']['item'])
 pass
